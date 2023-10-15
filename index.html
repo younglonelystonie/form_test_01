@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quan ly mon hoc Form</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="heading">Quản lý lớp môn học</h1>
+            <p class="title">Học kỳ: Học kỳ I - năm học 2023-2024</p>
+            <form
+                action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                method="post"
+                autocomplete="off"
+                target="_blank"
+            >
+                <div class="form_row">
+                    <div class="form_group">
+                        <label for="MonHoc" class="label_form">Môn học</label>
+                        <select
+                            name="Mon hoc"
+                            id="MonHoc"
+                            class="form_select_input"
+                            required
+                        >
+                            <option value="">Chọn môn học</option>
+                            <option value="Môn 1">Môn học 1</option>
+                            <option value="Môn 2">Môn học 2</option>
+                            <option value="Môn 3">Môn học 3</option>
+                        </select>
+                        <p class="form-error">Vui lòng chọn môn học</p>
+                    </div>
+                    <div class="form_group">
+                        <label for="NhomLop" class="label_form">Nhóm lớp</label>
+                        <input
+                            type="text"
+                            class="form_input"
+                            name="Nhóm lớp"
+                            required
+                            placeholder="Nhập nhóm lớp"
+                            id="NhomLop"
+                        />
+                        <p class="form-error">Vui lòng điền nhóm lớp</p>
+                    </div>
+                </div>
+                <div class="form_row">
+                    <div class="form_group">
+                        <label for="tenLop" class="label_form">Tên lớp</label>
+                        <input
+                            type="text"
+                            class="form_input"
+                            id="tenLop"
+                            required
+                            placeholder="Nhập tên lớp"
+                            name="Tên lớp"
+                        />
+                        <p class="form-error">Vui lòng điền tên lớp</p>
+                    </div>
+                    <div class="form_group">
+                        <label for="maLop" class="label_form">Mã lớp</label>
+                        <input
+                            type="text"
+                            class="form_input"
+                            placeholder="Nhập mã lớp"
+                            required
+                            id="maLop"
+                            name="Mã lớp"
+                        />
+                        <p class="form-error">Vui lòng điền mã lớp</p>
+                    </div>
+                </div>
+                <div class="form_row">
+                    <div class="form_group">
+                        <label for="giaoVien" class="label_form"
+                            >Giao vien</label
+                        >
+                        <select
+                            name="Giao vien"
+                            id="giaoVien"
+                            class="form_select_input"
+                            required
+                        >
+                            <option value="">Chọn giáo viên</option>
+                            <option value="Giao vien 1">Giáo viên 1</option>
+                            <option value="Giao vien 2">Giáo viên 2</option>
+                            <option value="Giao vien 3">Giáo viên 3</option>
+                        </select>
+                        <p class="form-error">Vui lòng chọn giáo viên</p>
+                    </div>
+                </div>
+                <div class="form_row">
+                    <input type="reset" value="Hủy" class="form_reset" />
+                    <input type="submit" value="Lưu" class="form_submit" />
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
