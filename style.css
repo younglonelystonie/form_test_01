@@ -121,7 +121,3 @@ button {
 .form_group:focus .form_input {
     border-color: #149f22;
 }
-form:has(:invalid) .form_submit {
-    opacity: 0.5;
-    pointer-events: none;
-}
